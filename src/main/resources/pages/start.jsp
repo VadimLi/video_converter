@@ -1,11 +1,10 @@
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ page contentType = "text/html; charset = UTF-8" %>
 <html>
     <head>
         <title>Video-audio converter</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <spring:url value="/resources/core/css/bootstrap.min.css" var="bootstrapCss" />
-        <link href="${bootstrapCss}" rel="stylesheet" />
+        <link rel="stylesheet"
+              href="/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css"/>
     </head>
     <body>
         <nav class="navbar navbar-inverse">
@@ -20,8 +19,9 @@
                 <h1>Converter</h1>
                 <form class="form-horizontal" id="search-form">
                     <div class="form-group form-group-lg">
+                        <label class="col-sm-2 control-label">Url video</label>
                         <div class="col-sm-10">
-                            <input placeholder="Url video" type="text" class="form-control" id="data"/>
+                            <input type="text" class="form-control" id="data"/>
                         </div>
                     </div>
                     <div class="form-group">
@@ -37,10 +37,8 @@
         </div>
         <div class="container">
             <footer>
-                <p>@Video-audio converter 2018</p>
+                <p>©Video-audio converter 2018</p>
             </footer>
-        </div>
-        <spring:url value="/resources/core/css/bootstrap.min.js" var="bootstrapJs" />
-        <script src="${bootstrapJs}"></script>
+    </div>
     </body>
 </html>
