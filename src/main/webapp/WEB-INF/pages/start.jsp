@@ -18,7 +18,7 @@
         <div class="container" style="min-height: 500px">
             <div class="starter-template">
                 <h1>Converter</h1>
-                <form class="form-horizontal" id="search-form">
+                <div class="form-horizontal" id="search-form">
                     <div class="form-group form-group-lg">
                         <div class="col-sm-10">
                             <input placeholder="Url video" type="text" class="form-control" id="data"/>
@@ -26,12 +26,12 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" id="bth-search"
-                                    class="btn btn-primary btn-lg">Add
+                            <button id="bth-search"
+                                    class="btn btn-primary btn-lg" onclick="loadVideo()">Add
                             </button>
                         </div>
                     </div>
-                </form>
+                </div>
                 <div id="feedback"></div>
             </div>
         </div>
@@ -40,7 +40,7 @@
                 <p>@Video-audio converter 2018</p>
             </footer>
         </div>
-        <spring:url value="/resources/core/css/bootstrap.min.js" var="bootstrapJs" />
-        <script src="${bootstrapJs}"></script>
+        <spring:url value="/resources/core/js/send_url.js" var="ajaxJs" />
+        <script src="${ajaxJs}"></script>
     </body>
 </html>
